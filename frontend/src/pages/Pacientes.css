@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.header h1 {
+  color: #1f3c88;
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.btn-logout {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: #b52b27;
+}
+
+h1, h2 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+}
+
+.error-msg {
+  background-color: #fee;
+  color: #c00;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid #c00;
+  font-size: 13px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.formulario input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #1f3c88;
+  outline: none;
+}
+
+.formulario button {
+  padding: 12px;
+  background-color: #1f3c88;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #0f2763;
+}
+
+.formulario button:disabled {
+  background-color: #aab7d6;
+  cursor: not-allowed;
+}
+
+.formulario.editing {
+  border: 2px dashed #1f3c88;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f4f7ff;
+}
+
+.card {
+  background-color: #f9fafc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #eee;
+}
+
+.acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.acciones button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-editar {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #d9963c;
+}
+
+.btn-eliminar {
+  background-color: #e02424;
+  color: white;
+  box-shadow: 0 2px 6px rgba(224, 36, 36, 0.18);
+}
+
+.btn-eliminar:hover {
+  background-color: #b71c1c;
+}
+
+.btn-guardar:disabled:hover {
+  background-color: #aab7d6;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff7e6;
+  color: #6b3d00;
+  border: 1px solid #ffe1a8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  font-size: 13px;
+  z-index: 1200;
+}
+
+.lista {
+  margin-top: 30px;
+}

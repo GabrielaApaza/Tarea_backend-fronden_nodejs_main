@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #6b5b53;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+  color: #1f3c88;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #1f3c88;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #1f3c88;
+}
+
+.formulario button {
+  background: #1f3c88;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  background: #162d66;
+}
+
+.lista {
+  margin-top: 25px;
+}
+
+.card {
+  background: #f7f8fc;
+  border-left: 5px solid #1f3c88;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Botón eliminar */
+.card button {
+  margin-top: 10px;
+  background: #060d72;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #1c1fc7;
+}
