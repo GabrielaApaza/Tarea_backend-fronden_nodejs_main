@@ -16,10 +16,12 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = (token, usuario) => {
+    // Normalize: backend returns 'name', frontend uses 'nombre'
+    const normalizado = { ...usuario, nombre: usuario.nombre || usuario.name };
     localStorage.setItem("token", token);
-    localStorage.setItem("usuario", JSON.stringify(usuario));
+    localStorage.setItem("usuario", JSON.stringify(normalizado));
     setToken(token);
-    setUsuario(usuario);
+    setUsuario(normalizado);
   };
 
   const logout = () => {
